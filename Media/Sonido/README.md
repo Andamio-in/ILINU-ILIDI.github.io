@@ -1,6 +1,6 @@
 Correr esto en la terminal de Estuary para usar los sonidos:
 
-+ !reslist "https://github.com/Andamio-in/ILINU-ILIDI/blob/main/Media/Sonido/samples.json"
++ !reslist "https://andamio-in.github.io/ILINU-ILIDI/Media/Sonido/samples.json"
 
 
 # Sonidos:
