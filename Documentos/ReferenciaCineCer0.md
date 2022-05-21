@@ -39,12 +39,12 @@ vol 0.5 $ "myVideo.extension"
 
 ## Transformación/Transformation (Text)
 
-+ size [n] -- 0++  
-+ rgb [r] [g] [b] -- 0-1  
-+ rgb' [r] [g] [b] [a] -- 0-1, alpha
-+ strike  
-+ bold  
-+ italic  
++ size [n] $ -- 0++  
++ rgb [r] [g] [b] $ -- 0-1  
++ rgb' [r] [g] [b] [a] $ -- 0-1, alpha
++ strike $   
++ bold $  
++ italic $  
 
 ## Dinamic parameters, parámetros dinámicos
 
@@ -53,7 +53,7 @@ vol 0.5 $ "myVideo.extension"
 Example, Ejemplo:  
 setOpacity (ramp 10 0 1) $ video "url"  
 
-+ (range [iVal] [fVal] & sin [vel]) $
++ (range [iVal] [fVal] $ sin [vel])
 
 Example, Ejemplo:  
 setOpacity (range 0 1 $ sin 0.5) $ video "url"  
