@@ -2,28 +2,26 @@
 // para sonido:
 
 main = x:allRules* { return "##miniTidal\n" + x.join("") }
-allRules = ti / des / eléctricas / eléctricos / inrrecorridas / inrrecorridos / inventados / inventadas / mariposas / maisons / selvas / yahtehua / caminos / paintings / anyCharacter
+allRules = ti / des / un / eléctricas / inrrecorridos / inventadas / paintings / yahtehua / trazos / talentos / recuerdos / selvas / maisons / rocas / mariposas / anyCharacter
 anyCharacter = .
 
 // ////////////////////////////////////// oración
 
 // acciones
 ti = "ti"i { return "slow 3.2 $" }
-des = "des"i { return "slow 3 $" }
+des = "des"i { return "slow 5.4 $" }
+un = "un"i { return "slow 2.5 $" }
 eléctricas = "eléctricas"i { return "s" }
-eléctricos = "eléctricos"i { return "s" }
-inrrecorridas = "inrrecorridas"i { return " # gain" }
 inrrecorridos = "inrrecorridos"i { return " # gain" }
-inventados = "inventados"i { return "# up" }
 inventadas = "inventadas"i { return "# up" }
 
 // audio-samples
-paintings = "paintings"i { return "\"simi:2" }
-yahtehua = "yahtehua"i { return "\"simi:0" }
-trazos = "trazos"i { return "\"simi:0" }
-talentos = "talentos"i { return "\"simi:0" }
-recuerdos = "recuerdos"i { return "\"simi:0" }
-selvas = "selvas"i { return "\"simi:2" }
-maisons = "maisons"i { return "\"simi:1" }
-rocas = "rocas"i { return "\"simi:1" }
-mariposas = "mariposas"i { return "\"simi:0" }
+paintings = "paintings"i { return "exquis:7" }
+yahtehua = "yahtehua"i { return "exquis:9" }
+trazos = "trazos"i { return "exquis:15" }
+talentos = "talentos"i { return "exquis:19" }
+recuerdos = "recuerdos"i { return "exquis:26" }
+selvas = "selvas"i { return "exquis:29" }
+maisons = "maisons"i { return "exquis:35" }
+rocas = "rocas"i { return "exquis:36" }
+mariposas = "mariposas"i { return "exquis:38" }

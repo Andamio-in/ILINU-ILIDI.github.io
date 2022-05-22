@@ -2,18 +2,19 @@
 // para visuales:
 
 main = x:allRules* { return "##cineCer0\n" + x.join("") }
-allRules = , / descripción / creation / Tech / une / de / yellow / yekchihua / colores / fósiles / trazos / tiempo / anyCharacter
+allRules = _ / descripción / creation / Tech / une / only / cada / de / yellow / yekchihua / colores / fósiles / trazos / tiempo / anyCharacter
 anyCharacter = .
 
 // ////////////////////////////////////// oración
 
 // acciones
-, = ","i { return "$" }
+_ = "_"i { return "$" }
 descripción = "descripción"i { return "video" }
 creation = "creation"i { return "video" }
 Tech = "Tech"i { return "video" }
 une = "une"i { return "vol" }
-only = "Llimpi"i { return "setCoord" }
+only = "only"i { return "setCoord" }
+cada = "cada"i { return "setSize" }
 de = "de"i { return "setCoord" }
 
 // videos-samples
