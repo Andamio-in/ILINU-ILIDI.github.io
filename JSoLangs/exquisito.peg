@@ -1,0 +1,20 @@
+##JSoLang yupana
+// para visuales:
+
+main = x:allRules* { return "##cineCer0\n" + x.join("") }
+allRules = _ / Puriy / chaquy / Llimpi / Ayphu / ñan / ñawi / nina / anyCharacter
+anyCharacter = .
+
+// ////////////////////////////////////// oración
+
+// acciones
+_ = "_"i { return "$" }
+Puriy = "Puriy"i { return "video" }
+chaquy = "chaquy"i { return "every" }
+Llimpi = "Llimpi"i { return "setBrightness" }
+Ayphu = "Ayphu"i { return "setOpacity" }
+
+// videos-samples
+ñan = "ñan"i { return "\"https://jac307.github.io/kipusqa-simi.github.io/samples/n%CC%83an.mp4?raw=true\"" }
+ñawi = "ñawi"i { return "\"https://jac307.github.io/kipusqa-simi.github.io/samples/n%CC%83awi.mp4?raw=true\"" }
+nina = "nina"i { return "\"https://jac307.github.io/kipusqa-simi.github.io/samples/nina.mp4?raw=true\"" }

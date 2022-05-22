@@ -1,0 +1,21 @@
+##JSoLang simi
+// para sonido:
+
+main = x:allRules* { return "##miniTidal\n" + x.join("") }
+allRules = mayu / Puriy / kuna / chaquy / Llimpi / simi / muhu / paqarina / pisqu / anyCharacter
+anyCharacter = .
+
+// ////////////////////////////////////// oración
+
+// acciones
+mayu = "mayu"i { return "slow 2 $" }
+Puriy = "Puriy"i { return "s" }
+kuna = "kuna"i { return "*2" }
+chaquy = "chaquy"i { return " # speed" }
+Llimpi = "Llimpi"i { return "# up" }
+simi = "simi"i { return "stack" }
+
+// audio-samples
+muhu = "muhu"i { return "\"simi:0" }
+paqarina = "paqarina"i { return "\"simi:1" }
+pisqu = "pisqu"i { return "\"simi:2" }
