@@ -1,21 +1,29 @@
-##JSoLang simi
+##JSoLang cadaver
 // para sonido:
 
 main = x:allRules* { return "##miniTidal\n" + x.join("") }
-allRules = mayu / Puriy / kuna / chaquy / Llimpi / simi / muhu / paqarina / pisqu / anyCharacter
+allRules = ti / des / eléctricas / eléctricos / inrrecorridas / inrrecorridos / inventados / inventadas / mariposas / maisons / selvas / yahtehua / caminos / paintings / anyCharacter
 anyCharacter = .
 
 // ////////////////////////////////////// oración
 
 // acciones
-mayu = "mayu"i { return "slow 2 $" }
-Puriy = "Puriy"i { return "s" }
-kuna = "kuna"i { return "*2" }
-chaquy = "chaquy"i { return " # speed" }
-Llimpi = "Llimpi"i { return "# up" }
-simi = "simi"i { return "stack" }
+ti = "ti"i { return "slow 3.2 $" }
+des = "des"i { return "slow 3 $" }
+eléctricas = "eléctricas"i { return "s" }
+eléctricos = "eléctricos"i { return "s" }
+inrrecorridas = "inrrecorridas"i { return " # gain" }
+inrrecorridos = "inrrecorridos"i { return " # gain" }
+inventados = "inventados"i { return "# up" }
+inventadas = "inventadas"i { return "# up" }
 
 // audio-samples
-muhu = "muhu"i { return "\"simi:0" }
-paqarina = "paqarina"i { return "\"simi:1" }
-pisqu = "pisqu"i { return "\"simi:2" }
+paintings = "paintings"i { return "\"simi:2" }
+yahtehua = "yahtehua"i { return "\"simi:0" }
+trazos = "trazos"i { return "\"simi:0" }
+talentos = "talentos"i { return "\"simi:0" }
+recuerdos = "recuerdos"i { return "\"simi:0" }
+selvas = "selvas"i { return "\"simi:2" }
+maisons = "maisons"i { return "\"simi:1" }
+rocas = "rocas"i { return "\"simi:1" }
+mariposas = "mariposas"i { return "\"simi:0" }
